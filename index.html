@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style>
+      h1 { color: #333333; font-family: 'Bitter', serif; font-size: 50px; font-weight: normal; line-height: 54px; margin: 0 0 54px; }
+      p { color: #333333; font-family: Georgia, serif; font-size: 18px; line-height: 28px; margin: 0 0 28px; }
+      p:first-of-type { font-size: 26px; line-height: 36px; margin: 0 0 28px; }
+      a { color: #c73036; font-family: Georgia, serif; text-decoration: underline; }
+      a:hover { color: #333333; text-decoration: underline; }
+      .author { color: #8d8d8d; font-family: Georgia, serif; font-style: italic; font-size: 14px; margin-bottom: 28px; }
+      .author a { color: #c73036; font-family: "Helvetica Neue", sans-serif; font-weight: bold; text-decoration: none; text-transform: uppercase; }
+    </style>
+    <title>ELF-UAE HR Bot</title>
+  </head>
+  <body>
+    <h1>
+      Welcome to the HR Bot 🤖.
+    </h1>
+    <p>
+      Click the bottom right icon <img src="chaticon.png" width=30 height=30> to start chatting with ILF HR Bot<br>
+      Currently, the only topc that's supported is the <strong>Financial Aids</strong> topic<br>
+      More topics will be added soon. Stay tuned!
+    </p>
+    <script type="module">
+      import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+      Chatbot.init({
+          chatflowid: "20d9ed7c-964f-423b-8483-e3ccf071fa43",
+          apiHost: "http://104.42.23.26:3000",
+      })
+  </script>
+  </body>
+</html>
